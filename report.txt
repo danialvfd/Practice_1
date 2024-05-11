@@ -1,36 +1,8 @@
-lost:       -50
------------------
+stracture css           -2
+width="50%" height="150" style="border:1px solid black;"        -4
 
-<table border="1">          -2
-<p>  <h2                    -2
-<img src="../Capture.PNG"   -2
-<ol>  /  <ul>               -2
+----------------
 
---------------
-time                        -30
-
-*****************************************
-
-<table border="1">          -4
-<p>  <h2                    -4
-<ol>  /  <ul>               -4
-<textarea name="texterea"   -2
-article / menu / iframe / footer / video    -10
-
---------------
-time                        -50
-
-*********************************
-project stracture       -2
-.table0 table           -2
-<tbody>                 -4
-with="100"              -8
-name="firstname" value="name"       -2
-<label for="Lastname">     -2
-<div> <span>            -2
-class="h1"              -2
-
----------------
-time:                       -20
-
+stracture css           -6
+single style naming     -2
 

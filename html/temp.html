@@ -1,12 +1,12 @@
 <html lang="fa">
 
 <head>
-  <link rel="stylesheet" href="../temp css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
   <meta charset="UTF-8">
   <meta name="description" content="educational web">
   <meta name="keywords" content="HTML, education, java">
   <meta name="author" content="Danial Vafadar">
-  <title>Practice 0</title>
+  <title>Practice 1</title>
 </head>
 
 <body>
@@ -17,14 +17,14 @@
       <a href="https://www.monta.ir/about-us/">درباره ما</a>
       <a href="https://www.monta.ir/contact-us/">تماس با ما</a>
     </nav>
-    <h1>This is a heading</h1>
+    <h1 class="main-heading">This is a heading</h1>
   </header>
   <main>
-    <div class="aDiv">
+    <div class="decorative-div">
       <p>
         simple of Div
       </p>
-      <p> can i get your <span style="color:red"> book</span> right now </p>
+      <p> can i get your <span class="highlighted-text-red"> book</span> right now </p>
       <p> need to <b>improve </b> </p>
       <hr>
       <strong> hi </strong>!!!
@@ -139,7 +139,7 @@
         </tr>
       </tbody>
     </table>
-    <article class="article1">
+    <article class="styled-article">
       <h1> Article 1</h1>
       <p> No one but you gets to decide how much you can handle. </p>
       <p> Reject your sense of injury, and the injury itself disappears. </p>
@@ -149,9 +149,9 @@
       <li> Option 2 </li>
       <li> Option 3 </li>
     </menu>
-    <iframe src="https://monta.ir" width="50%" height="150" style="border:1px solid black;">
+    <iframe src="https://monta.ir" class="iframe">
     </iframe>
-    <iframe src="https://google.com" width="50%" height="200" style="border:1px solid rgb(231, 0, 0);">
+    <iframe src="https://google.com" class="iframe">
     </iframe>
     <br>
     <img src="../image/simple 1.png" alt="Monta group" width="200" height="250" />
@@ -180,7 +180,7 @@
       <li>alex </li>
     </ul>
     <p>
-    <h2 id="myheader"> hi </h2>
+    <h2 id="header-section"> hi </h2>
     </p>
     <form action="https:/google.com" method="get">
       <input type="text" name="myname" placeholder="نام خود را بنویسید">
@@ -251,45 +251,45 @@
         <input type="submit" value="submit">
     </form>
     <br>
-    <div class="head1">
-      <h1>Class</h1>
+    <div class="styled-header">
+      <h1 class="main-heading">Class</h1>
       <p>Class simple</p>
     </div>
     <hr>
     <h1>All sort of display</h1>
-    <p>Can you <span class="display2"> handle</span> this <span style="color:blueviolet"> job </span> </p>
-    <div class="display1">
-      <p> Road to the final<span class="display2"> looks fuzzy </span> and we must do our best</p>
+    <p>Can you <span class="inline-display"> handle</span> this <span class="highlighted-text-violet"> job </span> </p>
+    <div class="block-display">
+      <p> Road to the final<span class="inline-display"> looks fuzzy </span> and we must do our best</p>
       <ol>
         <li> subject 1 </li>
         <li> subject 2 </li>
       </ol>
     </div>
-    <ul class="display1">
+    <ul class="block-display">
       <li><a href="https://monta.ir/about-us/" target="_blank"> دربارۀ ما </a></li>
       <li><a href="https://monta.ir/contact-us/" target="_blank"> تماس با ما </a></li>
       <li><a href="https://app.monta.ir/old/career" target="_blank"> همکاری با ما </a></li>
     </ul>
     <ul>
-      <li class="display2"><a href="https://monta.ir/about-us/" target="_blank"> دربارۀ ما </a></li>
-      <li class="display2"><a href="https://monta.ir/contact-us/" target="_blank"> تماس با ما </a></li>
-      <li class="display2"><a href="https://app.monta.ir/old/career" target="_blank"> همکاری با ما </a></li>
+      <li class="inline-display"><a href="https://monta.ir/about-us/" target="_blank"> دربارۀ ما </a></li>
+      <li class="inline-display"><a href="https://monta.ir/contact-us/" target="_blank"> تماس با ما </a></li>
+      <li class="inline-display"><a href="https://app.monta.ir/old/career" target="_blank"> همکاری با ما </a></li>
     </ul>
-    <ul class="display3">
+    <ul class="flex-display">
       <li><a href="https://monta.ir/about-us/" target="_blank"> دربارۀ ما </a></li>
       <li><a href="https://monta.ir/contact-us/" target="_blank"> تماس با ما </a></li>
       <li><a href="https://app.monta.ir/old/career" target="_blank"> همکاری با ما </a></li>
     </ul>
-    <ul class="display4">
+    <ul class="grid-display">
       <li><a href="https://monta.ir/about-us/" target="_blank"> دربارۀ ما </a></li>
       <li><a href="https://monta.ir/contact-us/" target="_blank"> تماس با ما </a></li>
       <li><a href="https://app.monta.ir/old/career" target="_blank"> همکاری با ما </a></li>
     </ul>
-    <div class="display1">
-      <div class="display2"> some day </div>
-      <div class="display2"> i will become </div>
-      <div class="display3"> Free from </div>
-      <div class="display4"> This life </div>
+    <div class="block-display">
+      <div class="inline-display"> some day </div>
+      <div class="inline-display"> i will become </div>
+      <div class="flex-display"> Free from </div>
+      <div class="grid-display"> This life </div>
     </div>
     <h2> Grid simple</h2>
     <div class="grid-container">
@@ -300,7 +300,7 @@
       <p class="grid-item"> 5 </p>
     </div>
   </main>
-  <footer>
+  <footer class="page-footer">
     <p>Author: Danial Vfd <br>
       <a href="mailto:danialvfd@gmail.com">danialvfd@gmail.com</a>
     </p>
