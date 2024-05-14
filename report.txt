@@ -6,3 +6,4 @@ width="50%" height="150" style="border:1px solid black;"        -4
 stracture css           -6
 single style naming     -2
 
+time:                   -40
