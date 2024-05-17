@@ -36,6 +36,113 @@
     text-align: center;
 }
 
+.container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-color: #a79c9c;
+}
+
+.empty-colored-div {
+    height: 500px;
+    background-color: #ccc;
+}
+
+.colored-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 2s;
+    border-radius: 15px;
+}
+
+.colored-button:hover {
+    background-color: rgb(193, 46, 46);
+}
+
+.box {
+    width: 70px;
+    height: 30px;
+    background-color: #c9c6f7;
+    color: rgb(192, 63, 63);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.static {
+    position: static;
+    border: 2px solid red;
+}
+
+.relative {
+    position: relative;
+    top: 10px;
+    left: 30px;
+    border: 2px solid blue;
+}
+
+.absolute {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    border: 2px solid rgb(41, 173, 254);
+}
+
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid rgb(55, 91, 23);
+}
+
+.sticky {
+    position: sticky;
+    top: 10px;
+    border: 2px solid orange;
+}
+
+.simple-paragraph {
+    font-style: italic;
+    padding: 20px;
+
+}
+
+.simple-paragraph::before {
+    content: "Paragraph";
+}
+
+.simple-paragraph::after {
+    content: "*";
+    position: absolute;
+    right: 30%;
+}
+
+.name-input {
+    padding: 8px;
+    margin: 10px;
+    border: 2px solid gray;
+}
+
+.name-input:focus {
+    border-color: blue;
+    outline: none;
+    box-shadow: 0 0 10px rgba(159, 55, 150, 0.5);
+}
+
+.order-list ul li:first-child {
+    color: red;
+    font-weight: bold;
+}
+
+.order-list ul li:last-child{
+    color: blue;
+    font-style: italic;
+}
+
 .styled-header {
     background-color: bisque;
     text-align: center;
