@@ -7,3 +7,9 @@ stracture css           -6
 single style naming     -2
 
 time:                   -40
+
+----------------
+
+width: 5vmax;               -4
+width: 10vi;                -4
+.order-list                 -4

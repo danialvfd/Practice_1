@@ -146,23 +146,24 @@
 .menu-item {
     color: gray;
     padding: 10px;
-    background-color: white;
+    background-color: red;
     transition: 0.3s ease;
+}
+
+.active {
+    color: white;
+    background-color:green;
 }
 
 .menu-item:not(.active) {
     cursor: pointer;
-    background-color: lightgray;
+    background-color: black;
 }
 
 .menu-item:not(.active):hover {
     background-color: darkgray;
 }
 
-.menu-item.active {
-    color: white;
-    background-color: blue;
-}
 
 .chil-combinator-example > p {
     color:red;
