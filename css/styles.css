@@ -7,6 +7,7 @@
     display: inline;
     background-color: aquamarine;
     word-spacing: 0.25cm;
+    transition: 1s;
 }
 
 .flex-display {
@@ -38,50 +39,51 @@ body {
 .grid-container {
 
     display: grid;
-    column-gap: 50px;
+    column-gap: 2rem;
     grid-template-columns: auto auto auto auto;
     background-color: #68cea3;
-    padding: 20px;
+    padding: 1.5rem;
 }
 
 .grid-item {
     background-color: rgba(86, 199, 219, 0.8);
-    border: 3px solid rgba(94, 1, 87, 0.8);
-    padding: 20px;
+    border: 0.2rem solid rgba(94, 1, 87, 0.8);
+    padding: 1.5rem;
     font: bold;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
 }
 
 .container {
     width: 100%;
-    height: 300px;
+    height: 20rem;
     position: relative;
     background-color: #a79c9c;
 }
 
 .empty-colored-div {
-    height: 500px;
+    height: 30rem;
     background-color: #ccc;
 }
 
 .colored-button {
     background-color: blue;
     color: white;
-    padding: 10px 20px;
+    padding: 0.8rem 1.5rem;
     text-align: center;
     cursor: pointer;
     transition: 2s;
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 
 .colored-button:hover {
     background-color: rgb(193, 46, 46);
+    transform: rotate(360deg);
 }
 
 .box {
-    width: 70px;
-    height: 30px;
+    width: 4rem;
+    height: 2rem;
     background-color: #c9c6f7;
     color: rgb(192, 63, 63);
     display: flex;
@@ -90,41 +92,77 @@ body {
     justify-content: center;
 }
 
+.animated-circle {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  animation: click 5s infinite;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+@keyframes click {
+    0% {
+      background-color: #3498db;
+      transform: scale(1);
+    }
+    25% {
+      background-color: #9b59b6;
+      transform: scale(1.1);
+    }
+    50% {
+      background-color: #e74c3c;
+      transform: scale(1.2);
+    }
+    75% {
+      background-color: #f1c40f;
+      transform: scale(1.1);
+    }
+    100% {
+      background-color: #2ecc71;
+      transform: scale(1);
+    }
+  }
+
 .static {
     position: static;
-    border: 2px solid red;
+    border: 0.2rem solid red;
 }
 
 .relative {
     position: relative;
-    top: 10px;
-    left: 30px;
-    border: 2px solid blue;
+    top: 1rem;
+    left: 2rem;
+    border: 0.2rem solid blue;
 }
 
 .absolute {
     position: absolute;
-    top: 40px;
-    left: 20px;
-    border: 2px solid rgb(41, 173, 254);
+    top: 2.5rem;
+    left: 1.2rem;
+    border: 0.2rem solid rgb(41, 173, 254);
 }
 
 .fixed {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border: 2px solid rgb(55, 91, 23);
+    bottom: 1.2rem;
+    right: 1.2rem;
+    border: 0.2rem solid rgb(55, 91, 23);
 }
 
 .sticky {
     position: sticky;
-    top: 10px;
-    border: 2px solid orange;
+    top: 0.7rem;
+    border: 0.2rem solid orange;
 }
 
 .simple-paragraph {
     font-style: italic;
-    padding: 20px;
+    padding: 1.5rem;
 
 }
 
@@ -139,15 +177,15 @@ body {
 }
 
 .name-input {
-    padding: 8px;
-    margin: 10px;
-    border: 2px solid gray;
+    padding: 0.5rem;
+    margin: 0.7rem;
+    border: 0.2rem solid gray;
 }
 
 .name-input:focus {
     border-color: blue;
     outline: none;
-    box-shadow: 0 0 10px rgba(159, 55, 150, 0.5);
+    box-shadow: 0 0 0.7rem rgba(159, 55, 150, 0.5);
 }
 
 .unorder-list ul li:first-child {
@@ -162,7 +200,7 @@ body {
 
 .menu-item {
     color: gray;
-    padding: 10px;
+    padding: 1rem;
     background-color: red;
     transition: 0.3s ease;
 }
@@ -187,23 +225,23 @@ body {
 }
 
 .colored-box {
-    width: 100px;
-    height: 100px;
+    width: 6rem;
+    height: 6rem;
     position: absolute;
 }
 
 .red-box {
     background-color: red;
     z-index: -1;
-    left: 50px;
-    top: 50px;
+    left: 3rem;
+    top: 3rem;
 }
 
 .blue-box {
     background-color: blue;
     z-index: 1;
-    left: 100px;
-    top: 100px;
+    left: 6rem;
+    top: 6rem;
 }
 
 .styled-header {
@@ -223,7 +261,7 @@ body {
 
 .styled-article {
     background-color: aquamarine;
-    border: 20px #020000;
+    border: 0.2rem #020000;
     border-radius: 50%;
     text-align: center;
 }
@@ -241,28 +279,28 @@ body {
 
 .table0 th,
 .table0 td {
-    border: 2px solid #020000;
+    border: 0.2rem solid #020000;
     background-color: aqua;
-    padding: 20px;
+    padding: 1.5rem;
     text-align: center;
 }
 
 .table0 th {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background-color: #5384ef;
     color: rgb(190, 236, 24);
 }
 
 .table1 td,
 .table1 th {
-    border: 2px solid #090000;
-    padding: 8px;
+    border: 0.2rem solid #090000;
+    padding: 0.5rem;
 }
 
 .table1 th {
-    padding-top: 12px;
-    padding-bottom: 18px;
+    padding-top: 0.7rem;
+    padding-bottom: 1.5rem;
     text-align: left;
     background-color: #42d447;
     color: rgb(226, 0, 0);
@@ -270,18 +308,18 @@ body {
 
 .table2 td,
 .table2 th {
-    border: 3px blue;
-    border-radius: 3px;
+    border: 0.2rem blue;
+    border-radius: 0.4rem;
 }
 
 .decorative-div {
-    border: 8px outset rgba(152, 7, 7, 0.664);
+    border: 0.5rem outset rgba(152, 7, 7, 0.664);
     background-color: rgb(164, 162, 252);
     text-align: center;
 }
 
 .iframe {
-    border: 1px solid black;
+    border: 0.2rem solid black;
     width: 50%;
     height: 150;
 }
@@ -289,7 +327,7 @@ body {
 #header-section {
     background-color: lightblue;
     color: black;
-    padding: 30px;
+    padding: 1.5rem;
     text-align: center;
 }
 
@@ -306,40 +344,40 @@ body {
 }
 
 .simple-paragraph-measures1 {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 1.2rem;
 }
 
 .simple-sub-paragraph-measures1 {
-    font-size: 12px;
+    font-size: 0.8rem;
     text-align: left;
 }
 
 .simple-shape-measures1 {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
+    gap: 1.2rem;
+    margin-top: 2rem;
 }
 
 .simple-square-measures1 {
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
     background-color: #3498db;
 }
 
 .simple-circle-measures1 {
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
     background-color: #e74c3c;
     border-radius: 50%;
 }
 
 .simple-paragraph-measures2 {
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 1.5rem;
 }
 
 .simple-sub-paragraph-measures2 {
@@ -351,7 +389,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10%;
-    margin-top: 30px;
+    margin-top: 1.2rem;
 }
 
 .simple-square-measures2 {
