@@ -13,3 +13,11 @@ time:                   -40
 width: 5vmax;               -4
 width: 10vi;                -4
 .order-list                 -4
+
+time:                       -40
+
+--------------
+
+width: 5vmax;               -8
+width: 10vi;                -8
+
