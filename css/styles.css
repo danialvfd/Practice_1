@@ -420,9 +420,9 @@ body {
 }
 
 .simple-circle-measures5 {
-    width: 5vmax;
-    height: 5vmax;
-    background-color: #99d663ac;
+    width: 6vh;
+    height: 6vh;
+    background-color: #b8ae00ac;
     border-radius: 50%;
 }
 
